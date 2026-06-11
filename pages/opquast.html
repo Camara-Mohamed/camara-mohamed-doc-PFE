@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>05 — Opquast · Le Fil Rouge PFE</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a href=".." class="logo">Le Fil Rouge</a>
+    <nav>
+      <a href="quality.html">Qualité HTML</a>
+      <a href="performance.html">Performance</a>
+      <a href="server.html">Serveur</a>
+      <a href="pest.html">Tests Pest</a>
+      <a href="opquast.html" class="active">Opquast</a>
+      <a href="users.html">Tests Utilisateurs</a>
+      <a href="javascript.html">JavaScript</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div class="hero-inner">
+      <h1>05 — Audit Opquast</h1>
+      <p class="page-subtitle">Référentiel v5 · 14 catégories · 2 règles minimum par catégorie</p>
+    </div>
+  </div>
+
+  <main class="page-wrapper">
+
+    <h2>1. Contenus</h2>
+
+    <table>
+      <thead><tr><th>Règle</th><th>Intitulé</th></tr></thead>
+      <tbody>
+        <tr><td>R3</td><td>Métadonnée <code>description</code> dans le code source</td></tr>
+        <tr><td>R6</td><td>Date de publication indiquée sur les contenus datés</td></tr>
+      </tbody>
+    </table>
+
+    <div class="shot-pair">
+      <figure class="shot">
+        <img class="shot-img" src="../assets/img/opquast/screen-06-24-04.png" alt="R3">
+        <figcaption><strong>R3</strong> — <code>&lt;meta name="description"&gt;</code></figcaption>
+      </figure>
+      <figure class="shot">
+        <img class="shot-img" src="../assets/img/opquast/screen-06-24-36.png" alt="R6">
+        <figcaption><strong>R6</strong> — date sur les annonces</figcaption>
+      </figure>
+    </div>
+
+    <hr>
+
+    <h2>2. Données personnelles</h2>
+
+    <table>
+      <thead><tr><th>Règle</th><th>Intitulé</th></tr></thead>
+      <tbody>
+        <tr><td>R17</td><td>Création de compte sans identification tiers obligatoire</td></tr>
+        <tr><td>R18</td><td>Processus de confirmation à la création de compte</td></tr>
+        <tr><td>R23</td><td>Déconnexion possible depuis les espaces privés</td></tr>
+        <tr><td>R26</td><td>Aucune info exposée sur l'existence d'un compte</td></tr>
+      </tbody>
+    </table>
+
+    <div class="shot-pair">
+      <figure class="shot">
+        <img class="shot-img" src="../assets/img/opquast/screen-06-27-20.png" alt="R17">
+        <figcaption><strong>R17</strong> — inscription sans SSO obligatoire</figcaption>
+      </figure>
+      <figure class="shot">
+        <img class="shot-img" src="../assets/img/opquast/screen-06-29-20.png" alt="R18">
+        <figcaption><strong>R18</strong> — e-mail de vérification</figcaption>
+      </figure>
+    </div>
+
+    <div class="shot-pair">
+      <figure class="shot">
+        <img class="shot-img" src="../assets/img/opquast/screen-06-29-54.png" alt="R23">
+        <figcaption><strong>R23</strong> — bouton déconnexion</figcaption>
+      </figure>
+      <figure class="shot">
+        <img class="shot-img" src="../assets/img/opquast/screen-06-35-44.png" alt="R26">
+        <figcaption><strong>R26</strong> — message d'erreur générique</figcaption>
+      </figure>
+    </div>
+
+    <hr>
+
+    <h2>3. E-Commerce</h2>
+
+    <table>
+      <thead><tr><th>Règle</th><th>Intitulé</th></tr></thead>
+      <tbody>
+        <tr><td>—</td><td>Aucune fonctionnalité e-commerce</td></tr>
+      </tbody>
+    </table>
+
+    <hr>
+
+    <h2>4. Formulaires</h2>
+
+    <table>
+      <thead><tr><th>Règle</th><th>Intitulé</th></tr></thead>
+      <tbody>
+        <tr><td>R69</td><td>Chaque champ de formulaire associé à une étiquette</td></tr>
+        <tr><td>R71</td><td>L'étiquette indique si la saisie est obligatoire</td></tr>
+        <tr><td>R75</td><td>Prévention des erreurs sur les mots de passe</td></tr>
+        <tr><td>R76</td><td>Mot de passe affichable en clair</td></tr>
+        <tr><td>R79/R80</td><td>Champs rejetés indiqués avec raison explicite</td></tr>
+        <tr><td>R85</td><td>Message de réussite après soumission réussie</td></tr>
+      </tbody>
+    </table>
+
+    <div class="shot-pair">
+      <figure class="shot">
+        <img class="shot-img" src="../assets/img/opquast/screen-06-36-46.png" alt="R69">
+        <figcaption><strong>R69</strong> — <code>&lt;label for&gt;</code></figcaption>
+      </figure>
+      <figure class="shot">
+        <img class="shot-img" src="../assets/img/opquast/screen-06-37-19.png" alt="R69 DevTools">
+        <figcaption><strong>R69</strong> — DevTools</figcaption>
+      </figure>
+    </div>
+
+    <div class="shot-pair">
+      <figure class="shot">
+        <img class="shot-img" src="../assets/img/opquast/screen-06-38-05.png" alt="R71 R75 R76">
+        <figcaption><strong>R71 · R75 · R76</strong> — champs requis, double saisie, affichage</figcaption>
+      </figure>
+      <figure class="shot">
+        <img class="shot-img" src="../assets/img/opquast/screen-06-38-49.png" alt="R79/R80">
+        <figcaption><strong>R79/R80</strong> — messages d'erreur</figcaption>
+      </figure>
+    </div>
+
+    <figure class="shot">
+      <img class="shot-img" src="../assets/img/opquast/screen-06-39-14.png" alt="R85">
+      <figcaption><strong>R85</strong> — notification de succès</figcaption>
+    </figure>
+
+    <hr>
+
+    <h2>5. Images</h2>
+
+    <table>
+      <thead><tr><th>Règle</th><th>Intitulé</th></tr></thead>
+      <tbody>
+        <tr><td>R111</td><td>Images décoratives sans <code>alt</code> significatif</td></tr>
+        <tr><td>R113</td><td>Images informatives avec <code>alt</code> descriptif</td></tr>
+      </tbody>
+    </table>
+
+    <hr>
+
+    <h2>6. Internationalisation</h2>
+
+    <table>
+      <thead><tr><th>Règle</th><th>Intitulé</th></tr></thead>
+      <tbody>
+        <tr><td>R128</td><td>Indicatif international sur les numéros de téléphone</td></tr>
+        <tr><td>R130</td><td>Langue principale indiquée dans le code source</td></tr>
+      </tbody>
+    </table>
+
+    <figure class="shot">
+      <img class="shot-img" src="../assets/img/opquast/screen-06-39-47.png" alt="R130">
+      <figcaption><strong>R130</strong> — <code>&lt;html lang="fr"&gt;</code></figcaption>
+    </figure>
+
+    <hr>
+
+    <h2>7. Liens</h2>
+
+    <table>
+      <thead><tr><th>Règle</th><th>Intitulé</th></tr></thead>
+      <tbody>
+        <tr><td>R136</td><td>Chaque lien doté d'un intitulé explicite</td></tr>
+        <tr><td>R147</td><td>Format des fichiers en téléchargement indiqué</td></tr>
+        <tr><td>R152</td><td>Tous les liens internes valides</td></tr>
+      </tbody>
+    </table>
+
+    <div class="shot-pair">
+      <figure class="shot">
+        <img class="shot-img" src="../assets/img/opquast/screen-06-41-55.png" alt="R136">
+        <figcaption><strong>R136</strong> — intitulés de navigation</figcaption>
+      </figure>
+      <figure class="shot">
+        <img class="shot-img" src="../assets/img/opquast/screen-06-42-21.png" alt="R152">
+        <figcaption><strong>R152</strong> — navigation sans 404</figcaption>
+      </figure>
+    </div>
+
+    <figure class="shot">
+      <img class="shot-img" src="../assets/img/opquast/screen-06-44-17.png" alt="R147">
+      <figcaption><strong>R147</strong> — format PDF indiqué sur les documents</figcaption>
+    </figure>
+
+    <hr>
+
+    <h2>8. Navigation</h2>
+
+    <table>
+      <thead><tr><th>Règle</th><th>Intitulé</th></tr></thead>
+      <tbody>
+        <tr><td>R155</td><td>Retour à l'accueil depuis toutes les pages</td></tr>
+        <tr><td>R157</td><td>Élément actif du menu signalé visuellement</td></tr>
+        <tr><td>R165</td><td>Focus clavier non supprimé</td></tr>
+      </tbody>
+    </table>
+
+    <div class="shot-pair">
+      <figure class="shot">
+        <img class="shot-img" src="../assets/img/opquast/screen-06-45-10.png" alt="R155">
+        <figcaption><strong>R155</strong> — logo cliquable</figcaption>
+      </figure>
+      <figure class="shot">
+        <img class="shot-img" src="../assets/img/opquast/screen-06-45-28.png" alt="R157">
+        <figcaption><strong>R157</strong> — lien actif mis en valeur</figcaption>
+      </figure>
+    </div>
+
+    <figure class="shot">
+      <img class="shot-img" src="../assets/img/opquast/screen-06-45-47.png" alt="R165">
+      <figcaption><strong>R165</strong> — outline focus clavier</figcaption>
+    </figure>
+
+    <hr>
+
+    <h2>9. Newsletter</h2>
+
+    <table>
+      <thead><tr><th>Règle</th><th>Intitulé</th></tr></thead>
+      <tbody>
+        <tr><td>—</td><td>Aucune fonctionnalité newsletter</td></tr>
+      </tbody>
+    </table>
+
+    <hr>
+
+    <h2>10. Présentation</h2>
+
+    <table>
+      <thead><tr><th>Règle</th><th>Intitulé</th></tr></thead>
+      <tbody>
+        <tr><td>R180</td><td>Charte graphique cohérente sur toutes les pages</td></tr>
+        <tr><td>R193</td><td>Zoom navigateur non bloqué</td></tr>
+        <tr><td>R194</td><td>Adaptation mobile (responsive)</td></tr>
+      </tbody>
+    </table>
+
+    <div class="shot-pair">
+      <figure class="shot">
+        <img class="shot-img" src="../assets/img/opquast/screen-07-06-15.png" alt="R180">
+        <figcaption><strong>R180</strong> — charte cohérente</figcaption>
+      </figure>
+      <figure class="shot">
+        <img class="shot-img" src="../assets/img/opquast/screen-07-06-58.png" alt="R193">
+        <figcaption><strong>R193</strong> — zoom 200%</figcaption>
+      </figure>
+    </div>
+
+    <figure class="shot">
+      <img class="shot-img" src="../assets/img/opquast/screen-07-16-29.png" alt="R194">
+      <figcaption><strong>R194</strong> — responsive mobile</figcaption>
+    </figure>
+
+    <hr>
+
+    <h2>11. Sécurité</h2>
+
+    <table>
+      <thead><tr><th>Règle</th><th>Intitulé</th></tr></thead>
+      <tbody>
+        <tr><td>R197</td><td>Toutes les pages servies en HTTPS</td></tr>
+        <tr><td>R202</td><td>Mot de passe modifiable depuis le compte</td></tr>
+        <tr><td>R204</td><td>Mot de passe réinitialisable</td></tr>
+        <tr><td>R205</td><td>Mots de passe non communiqués en clair</td></tr>
+      </tbody>
+    </table>
+
+    <div class="shot-pair">
+      <figure class="shot">
+        <img class="shot-img" src="../assets/img/opquast/screen-07-17-15.png" alt="R197">
+        <figcaption><strong>R197</strong> — HTTPS en production</figcaption>
+      </figure>
+      <figure class="shot">
+        <img class="shot-img" src="../assets/img/opquast/screen-07-17-41.png" alt="R202">
+        <figcaption><strong>R202</strong> — section mot de passe</figcaption>
+      </figure>
+    </div>
+
+    <div class="shot-pair">
+      <figure class="shot">
+        <img class="shot-img" src="../assets/img/opquast/screen-07-17-59.png" alt="R204">
+        <figcaption><strong>R204</strong> — page /forgot-password</figcaption>
+      </figure>
+      <figure class="shot">
+        <img class="shot-img" src="../assets/img/opquast/screen-06-12-41.png" alt="R205">
+        <figcaption><strong>R205</strong> — e-mail reset sans mot de passe en clair</figcaption>
+      </figure>
+    </div>
+
+    <hr>
+
+    <h2>12. Serveur & performances</h2>
+
+    <table>
+      <thead><tr><th>Règle</th><th>Intitulé</th></tr></thead>
+      <tbody>
+        <tr><td>R222</td><td>Code HTTP 404 pour les ressources non trouvées</td></tr>
+        <tr><td>R223</td><td>Page 404 personnalisée</td></tr>
+      </tbody>
+    </table>
+
+    <div class="shot-pair">
+      <figure class="shot">
+        <img class="shot-img" src="../assets/img/opquast/screen-07-22-06.png" alt="R222">
+        <figcaption><strong>R222</strong> — code 404 dans DevTools</figcaption>
+      </figure>
+      <figure class="shot">
+        <img class="shot-img" src="../assets/img/opquast/screen-07-22-50.png" alt="R223">
+        <figcaption><strong>R223</strong> — page 404 personnalisée</figcaption>
+      </figure>
+    </div>
+
+    <hr>
+
+    <h2>13. Structure & code</h2>
+
+    <table>
+      <thead><tr><th>Règle</th><th>Intitulé</th></tr></thead>
+      <tbody>
+        <tr><td>R232/R233</td><td>UTF-8 déclaré</td></tr>
+        <tr><td>R234</td><td>Structure de titres hiérarchisée</td></tr>
+        <tr><td>R235</td><td>Listes balisées avec <code>&lt;ul&gt;</code>/<code>&lt;li&gt;</code></td></tr>
+        <tr><td>R236</td><td>Identifiants HTML uniques dans la page</td></tr>
+      </tbody>
+    </table>
+
+    <figure class="shot">
+      <img class="shot-img" src="../assets/img/opquast/screen-07-23-43.png" alt="R232 R234">
+      <figcaption><strong>R232 · R234</strong> — charset UTF-8 et hiérarchie des titres</figcaption>
+    </figure>
+
+    <div class="shot-pair">
+      <figure class="shot">
+        <img class="shot-img" src="../assets/img/opquast/screen-07-25-01.png" alt="R235">
+        <figcaption><strong>R235</strong> — <code>&lt;ul&gt;</code>/<code>&lt;li&gt;</code> dans la navigation</figcaption>
+      </figure>
+      <figure class="shot">
+        <img class="shot-img" src="../assets/img/opquast/screen-07-28-26.png" alt="R236">
+        <figcaption><strong>R236</strong> — IDs uniques vérifiés</figcaption>
+      </figure>
+    </div>
+
+  </main>
+
+</body>
+</html>

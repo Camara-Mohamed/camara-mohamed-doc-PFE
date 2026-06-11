@@ -5,8 +5,8 @@
   <a href="https://www.figma.com/design/9lzwLsQn7pkZTwEIQnk1RA/Le-Fil-Rouge?node-id=0-1&t=CHFPrh0sjf7PPZ2s-1" target="_blank">
     <img src="https://img.shields.io/badge/Figma-Design-F24E1E?logo=figma" alt="badge Figma">
   </a>
-  <a href="https://github.com/Camara-Mohamed/camara-mohamed-doc-PFE" target="_blank">
-    <img src="https://img.shields.io/badge/Documentation-GitHub-black?logo=github" alt="badge Github">
+  <a href="https://github.com/Camara-Mohamed/le-fil-rouge-PFE" target="_blank">
+    <img src="https://img.shields.io/badge/Code Source-GitHub-black?logo=github" alt="badge Github">
   </a>
   <img src="https://img.shields.io/badge/Status-Projet%20académique-green" alt="badge Status">
 </p>
